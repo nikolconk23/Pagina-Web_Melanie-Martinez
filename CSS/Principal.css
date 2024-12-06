@@ -1,0 +1,338 @@
+/*Fondo de la pagina*/
+body {
+    position: relative;
+    background-image: linear-gradient(#8b3b48, #2B281F);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../Logos/Fondo1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+/*Fuente nueva*/
+.galada-regular {
+    font-family: "Galada", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    flex: 1;
+    margin-bottom: 100px;
+}
+/*Encabezado y titulo melanie*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+    background-color: #3C402F;
+    color: white;
+    position: relative;
+    height: auto; 
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #E1B5B6;
+}
+
+/* Título principal */
+.title-container h1 {
+    text-align: center;
+    font-family: "Galada", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    transform: scale(2.5);
+    margin-top: 20px;
+    margin-left: 12%;
+}
+
+/*  Registro */
+.register-icon {
+    text-decoration: none;
+    color: rgb(54, 15, 153);
+    font-size: 24px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.register-icon:hover {
+    color: #bccd1c;
+}
+
+/* Navegación y colores*/
+nav {
+    margin: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    margin: 0;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#principal-link {
+    color: #927726;
+    background-color: #F2E4BB;
+}
+
+#tienda-link {
+    color: #A3616B;
+    background-color: #FFD8DE;
+}
+
+#noticias-link {
+    color: #6B6BA3;
+    background-color: #B4CED7;
+}
+
+#albumes-link {
+    color: #927726;
+    background-color: #F2E4BB;
+}
+
+#carrito-link {
+    color: #A3616B;
+    background-color: #FFD8DE;
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+nav input[type="search"] {
+    padding: 5px;
+    margin-left: 15px;
+    border: 2px solid #FCDCDF;
+    background-color: #FCDCDF;
+    border-radius: 5px;
+}
+
+/* Descripción */
+.description {
+    text-align: left;
+    margin: 100px 20px 20px auto;
+    padding: 20px;
+    max-width: 500px;
+    font-size: 15rem !important;
+    color: #333;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    
+}
+.description-box {
+    max-width: 500px;
+    padding: 20px;
+    background-color: #BF8892;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.description-title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: left;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.inner-box {
+    background-color: #A3616B;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #ffffff00;
+    color: #fff;
+}
+
+.description-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #fff;
+}
+
+/* Pie de pagina */
+.footer {
+    background-color: #8B3B48;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto; 
+    
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: white;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+/* Formulario*/
+.contact-form-container {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0); 
+    padding: 0px; 
+    border-radius: 0px; 
+    text-align: center;
+}
+
+.contact-form-container h2 {
+    font-size: 1.5rem;
+    color: #E1B5B6;
+    margin-bottom: 0px;
+    margin-top: -8px;
+}
+
+.contact-form-container label {
+    font-size: 0.9rem;
+    color: #ffffff; 
+    margin-bottom: 0px;
+}
+
+.contact-form-container input[type="text"],
+.contact-form-container input[type="email"] {
+    width: 140px;
+    padding: 4px; 
+    margin: 2px;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    border: 1px solid #E1B5B6;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #ffffff;
+}
+
+.contact-form-container input[type="submit"] {
+    display: center;
+    width: 30%;
+    padding: 4px;
+    font-size: 0.9rem;
+    border-radius: 5px; 
+    background-color: #A3616B; 
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    margin-top: 5px;
+}
+
+.contact-form-container input[type="submit"]:hover {
+    background-color: #E1B5B6; 
+}
+/*Breakpoint (480px) */
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .title-container h1 {
+        font-size: 1.2rem;
+        transform: scale(1.8);
+        margin-top: 10px;
+    }
+
+}
+
+/* Breakpoint (768px) */
+@media (max-width: 768px) {
+    .header {
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .title-container h1 {
+        font-size: 1.5rem;
+        transform: scale(2);
+        margin-left: 0;
+    }
+
+    .description-box {
+        max-width: 100%;
+        font-size: 1rem;
+        padding: 15px;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+        margin: 20 auto;
+    }
+}
+/* Breakpoint (1024px)*/
+@media (max-width: 1024px) {
+    .header {
+        padding: 15px;
+    }
+
+    .title-container h1 {
+        font-size: 1.8rem;
+        transform: scale(2.2);
+    }
+
+    .description-box {
+        max-width: 80%;
+        margin: auto;
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+
+    .contact-form-container input[type="text"],
+    .contact-form-container input[type="email"] {
+        width: 200px;
+        padding: 6px;
+    }
+
+    .contact-form-container input[type="submit"] {
+        width: 40%;
+    }
+}

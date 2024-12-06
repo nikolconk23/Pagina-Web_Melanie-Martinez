@@ -1,0 +1,142 @@
+body {
+    position: relative;
+    background-image: linear-gradient(#8b3b48, #2B281F);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Esto asegura que el body ocupe toda la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../Logos/Fondo1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.galada-regular {
+    font-family: "Galada", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    background-color: #FFD8DE;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px; 
+    width: 500%;
+    margin: auto;
+    min-height: 30vh;
+}
+
+.message h1 {
+    color: #8B3B48;
+    font-family: "Galada";
+}
+
+.footer {
+    background-color: #8B3B48;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto; 
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: white;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+/* Media Query para dispositivos con un ancho máximo de 480px */
+@media (max-width: 480px) {
+    body {
+        background-image: linear-gradient(#2B281F, #8b3b48);
+        padding: 0px; 
+        font-size: 14px;
+    }
+    main {
+        width: 90%;
+        padding: 15px; 
+        border-radius: 5px; 
+    }
+    .message h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+        font-size: 16px;
+  
+    }
+
+    main {
+        max-width: 80%; 
+        padding: 20px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+    }
+
+    .footer {
+        flex-direction: column; 
+        text-align: center; 
+        gap: 10px; 
+}
+
+
+@media (max-width: 1024px) {
+    body {
+        background-position: top; 
+        font-size: 18px; 
+        justify-content: flex-start;
+    }
+
+    main {
+        width: 70%;
+        padding: 30px; 
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
+    }
+
+    .social-icons {
+        gap: 15px; 
+        justify-content: center; 
+        font-size: 14px; 
+    }
+}
+}

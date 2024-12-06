@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melanie Martinez Tribute - Shop</title>
+    <link rel="stylesheet" href="CSS/Albumes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Galada&family=Molle&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header">
+            <div class="title-container">
+                <h1>Melanie Martínez</h1>
+            </div>
+            <div class="contact-form-container">
+                <h2>Contáctanos</h2>
+                <form action="exito.html" method="get" style="color: #ffffff;">
+                    <label for="name">Nombre:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Correo Electrónico:</label><br>
+                    <input type="email" id="email" name="email">
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+            <a href="registro.html" class="register-icon">
+                <img src="Logos/Logo_Usuario.png" width="40">
+            </a>
+        </header>
+
+        <nav>
+            <a href="principal.html" id="principal-link">Principal</a>
+            <a href="tienda.html" id="tienda-link">Tienda</a>
+            <a href="noticias.html" id="noticias-link">Noticias e Información</a>
+            <a href="albumes.html" id="albumes-link">Álbumes</a>
+            <a href="carrito.html" id="carrito-link">
+                <img src="Logos/Logo_Carrito.png" alt="Carrito de compras" width="25">
+                <span id="cart-count" style="color: #A3616B;">0</span> 
+            </a>
+            <input type="search" placeholder="Buscar...">
+        </nav>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const savedCartCount = localStorage.getItem('cartCount');
+                if (savedCartCount) {
+                    document.getElementById('cart-count').innerText = savedCartCount;
+                }
+            });
+        </script>
+<div class="albums-title">
+    <h2 class = "galada-regular description-title">Albumes</h2>
+</div>
+        <main>
+                    <section class="albums-container">
+                        <a href="CryBaby.html" class="album-item">
+                            <img src="Logos/CryBaby.jpg" alt="Cry Baby">
+                            <h3 class="galada-regular">Cry Baby</h3>
+                        </a>
+                        <a href="K-12.html" class="album-item">
+                            <img src="Logos/K-12.jpg" alt="K-12">
+                            <h3 class="galada-regular">K-12</h3>
+                        </a>
+                        <a href="portals.html" class="album-item">
+                            <img src="Logos/Portal.jpg" alt="Portals">
+                            <h3 class="galada-regular">Portals</h3>
+                        </a>
+                    </section>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Tributo a Melanie Martinez. Todos los derechos reservados.</p>
+        <p>Desarrollado por Nikol Camila Ramirez Murillo</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/littlebodybigheart/" target="_blank">
+                <img src="Logos/Logo_Instagram.png" alt="Instagram" width="40">
+            </a>
+            <a href="https://x.com/melanielbbh" target="_blank">
+                <img src="Logos/Logo_X.png" alt="X" width="40">
+            </a>
+            <a href="https://www.facebook.com/melaniemartinezmusic" target="_blank">
+                <img src="Logos/Logo_Facebook.png" alt="Facebook" width="40">
+            </a>
+            <a href="https://www.youtube.com/@MelanieMartinez" target="_blank">
+                <img src="Logos/Logo_Youtube.png" alt="YouTube" width="40">
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

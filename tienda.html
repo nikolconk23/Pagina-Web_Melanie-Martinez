@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melanie Martinez Tribute - Shop Fans</title>
+    <link rel="stylesheet" href="CSS/Tienda.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Galada&family=Molle&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="title-container">
+                <h1>Melanie Martinez</h1>
+            </div>
+            <div class="contact-form-container">
+                <h2>Contáctanos</h2>
+                <form action="exito.html" method="get">
+                    <label for="name">Nombre:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Correo Electrónico:</label><br>
+                    <input type="email" id="email" name="email">
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+            <a href="registro.html" class="register-icon">
+                <img src="Logos/Logo_Usuario.png" width="40">
+            </a>
+        </header>
+
+        <nav>
+            <a href="principal.html" id="principal-link">Principal</a>
+            <a href="tienda.html" id="tienda-link">Tienda</a>
+            <a href="noticias.html" id="noticias-link">Noticias e Información</a>
+            <a href="albumes.html" id="albumes-link">Álbumes</a>
+            <a href="carrito.html" id="carrito-link">
+                <img src="Logos/Logo_Carrito.png" alt="Carrito de compras" width="25">
+                <span id="cart-count" style="color: #A3616B;">0</span> 
+            </a>
+            <input type="search" placeholder="Buscar...">
+        </nav>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const savedCartCount = localStorage.getItem('cartCount');
+                if (savedCartCount) {
+                    document.getElementById('cart-count').innerText = savedCartCount;
+                }
+            });
+        </script>
+        
+        <main>
+            <div class="store-title">
+                <h2 class="galada-regular description-title">Tienda</h2>
+            </div>
+
+            <div class="store-search">
+                <input type="search" id="storeSearch" placeholder="Buscar en tienda..." onkeyup="filterItems()">
+            </div>
+
+            <section>
+                <div class="items-container" id="itemsContainer">
+                    <div class="item" data-name="Camiseta Crybaby">
+                        <a href="item1.html">
+                            <img src="Items/Camisa_Melanie.png" alt="Camiseta Crybaby">
+                            <h3>Camiseta Crybaby</h3>
+                            <p>$25.00</p>
+                        </a>
+                    </div>
+                    <div class="item" data-name="Gorra K-12">
+                        <a href="item2.html">
+                            <img src="Items/Gorra_Melanie.png" alt="Gorra K-12">
+                            <h3>Gorra K-12</h3>
+                            <p>$20.00</p>
+                        </a>
+                    </div>
+                    <div class="item" data-name="Vinilo After School">
+                        <a href="item3.html">
+                            <img src="Items/Vinilo_Melanie.png" alt="Vinilo After School">
+                            <h3>Vinilo After School</h3>
+                            <p>$40.00</p>
+                        </a>
+                    </div>
+                    <div class="item" data-name="Vestido Melanie">
+                        <a href="item4.html">
+                            <img src="Items/Vestido_Melanie.png" alt="Vestido Melanie">
+                            <h3>Vestido Melanie</h3>
+                            <p>$200.00</p>
+                        </a>
+                    </div>
+                    <div class="item" data-name="Taza Portals">
+                        <a href="item5.html">
+                            <img src="Items/Taza_Melanie.png" alt="Taza Portals">
+                            <h3>Taza Portals</h3>
+                            <p>$35.00</p>
+                        </a>
+                    </div>
+                    <div class="item" data-name="Chaqueta Test Me">
+                        <a href="item6.html">
+                            <img src="Items/Chaqueta_Melanie.png" alt="Chaqueta Test Me">
+                            <h3>Chaqueta Test Me</h3>
+                            <p>$160.00</p>
+                        </a>
+                    </div>
+                    <div class="item" data-name="Llavero Dragon">
+                        <a href="item7.html">
+                            <img src="Items/Llavero_Melanie.png" alt="Llavero Dragon">
+                            <h3>Llavero Dragon</h3>
+                            <p>$10.00</p>
+                        </a>
+                    </div>
+                    <div class="item" data-name="Vela Melanie">
+                        <a href="item8.html">
+                            <img src="Items/Velas_Melanie.png" alt="Vela Melanie">
+                            <h3>Vela Melanie</h3>
+                            <p>$30.00</p>
+                        </a>
+                    </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Tributo a Melanie Martinez. Todos los derechos reservados.</p>
+        <p>Desarrollado por Nikol Camila Ramirez Murillo</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/littlebodybigheart/" target="_blank">
+                <img src="Logos/Logo_Instagram.png" alt="Instagram" width="40">
+            </a>
+            <a href="https://x.com/melanielbbh" target="_blank">
+                <img src="Logos/Logo_X.png" alt="X" width="40">
+            </a>
+            <a href="https://www.facebook.com/melaniemartinezmusic" target="_blank">
+                <img src="Logos/Logo_Facebook.png" alt="Facebook" width="40">
+            </a>
+            <a href="https://www.youtube.com/@MelanieMartinez" target="_blank">
+                <img src="Logos/Logo_Youtube.png" alt="YouTube" width="40">
+            </a>
+        </div>
+    </footer>
+
+
+    <script>
+        function filterItems() {
+            const searchInput = document.getElementById('storeSearch').value.toLowerCase();
+            const items = document.querySelectorAll('.item');
+            let hasResults = false;
+
+            items.forEach(item => {
+                const itemName = item.getAttribute('data-name').toLowerCase();
+                if (itemName.includes(searchInput)) {
+                    item.style.display = 'block';
+                    hasResults = true;
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            document.getElementById('noResults').style.display = hasResults ? 'none' : 'block';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melanie Martinez Tribute - Shop</title>
+    <link rel="stylesheet" href="CSS/Noticias.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Galada&family=Molle&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="title-container">
+                <h1>Melanie Martinez</h1>
+            </div>
+            <div class="contact-form-container">
+                <h2>Contáctanos</h2>
+                <form action="exito.html" method="get">
+                    <label for="name">Nombre:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Correo Electrónico:</label><br>
+                    <input type="email" id="email" name="email">
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+            <a href="registro.html" class="register-icon">
+                <img src="Logos/Logo_Usuario.png" width="40">
+            </a>
+        </header>
+
+        <nav>
+            <a href="principal.html" id="principal-link">Principal</a>
+            <a href="tienda.html" id="tienda-link">Tienda</a>
+            <a href="noticias.html" id="noticias-link">Noticias e Información</a>
+            <a href="albumes.html" id="albumes-link">Álbumes</a>
+            <a href="carrito.html" id="carrito-link">
+                <img src="Logos/Logo_Carrito.png" alt="Carrito de compras" width="25">
+                <span id="cart-count" style="color: #A3616B;">0</span> 
+            </a>
+            <input type="search" placeholder="Buscar...">
+        </nav>
+
+        <main>
+            <div class="news-title">
+                <h2 class="galada-regular description-title">Noticias</h2>
+            </div>
+
+            <section class="news-container">
+                <a href="https://es.rollingstone.com/melanie-martinez-renace-y-es-mas-arriesgada-que-nunca-en-portals/" class="news-item">
+                    <h3>Noticia 1: Nuevo Álbum de Melanie</h3>
+                    <p>Melanie Martínez ha anunciado su nuevo álbum, el cual será lanzado el próximo mes. Los fanáticos esperan ansiosos las nuevas canciones.</p>
+                </a>
+                <a href="https://www.sentidog.com/2023/11/13/melanie-martinez-anuncia-the-trilogy-tour-2024-fechas-entradas-e-informacion-de-preventa/" class="news-item">
+                    <h3>Noticia 2: Próxima Gira Mundial</h3>
+                    <p>Se ha confirmado que Melanie Martínez comenzará una gira mundial el próximo año, visitando diferentes países para deleitar a sus fans.</p>
+                </a>
+                <a href="https://www.youtube.com/watch?v=fzAyZ1Lh-zI" class="news-item">
+                    <h3>Noticia 3: Nuevo Videoclip</h3>
+                    <p>El nuevo videoclip de Melanie para la canción "Void" ya está disponible. Es una obra visual llena de creatividad y emociones fuertes.</p>
+                </a>
+                <a href="https://www.latercera.com/culto/2023/03/31/melanie-martinez-siempre-me-ha-inspirado-fiona-apple-pero-para-este-disco-me-fui-en-una-onda-mucho-mas-alternativa-y-natural/" class="news-item">
+                    <h3>Noticia 4: Entrevista Exclusiva</h3>
+                    <p>Melanie Martínez participó en una entrevista exclusiva donde habló sobre su inspiración detrás del nuevo álbum y sus futuros proyectos.</p>
+                </a>
+            </section>
+        </main>
+    
+        <div class="footer">
+            <p>&copy; 2024 Tributo a Melanie Martinez. Todos los derechos reservados.</p>
+            <p>Desarrollado por Nikol Camila Ramirez Murillo</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/littlebodybigheart/" target="_blank">
+                    <img src="Logos/Logo_Instagram.png" alt="Instagram" width="40">
+                </a>
+                <a href="https://x.com/melanielbbh" target="_blank">
+                    <img src="Logos/Logo_X.png" alt="X" width="40">
+                </a>
+                <a href="https://www.facebook.com/melaniemartinezmusic" target="_blank">
+                    <img src="Logos/Logo_Facebook.png" alt="Facebook" width="40">
+                </a>
+                <a href="https://www.youtube.com/@MelanieMartinez" target="_blank">
+                    <img src="Logos/Logo_Youtube.png" alt="YouTube" width="40">
+                </a>
+            </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const savedCartCount = localStorage.getItem('cartCount');
+                if (savedCartCount) {
+                    document.getElementById('cart-count').innerText = savedCartCount;
+                }
+            });
+        </script>
+        
+    </div>
+</body>
+
+</html>

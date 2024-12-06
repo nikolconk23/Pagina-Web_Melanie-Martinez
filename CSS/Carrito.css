@@ -1,0 +1,352 @@
+/*Fondo de la pagina*/
+body {
+    position: relative;
+    background-image: linear-gradient(#8b3b48, #2B281F);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../Logos/Fondo1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+/*Fuente nueva*/
+.galada-regular {
+    font-family: "Galada", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    flex: 1;
+    margin-bottom: 100px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+    background-color: #3C402F;
+    color: white;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #E1B5B6;
+}
+
+/* Título principal */
+.title-container h1 {
+    margin: 0;
+    text-align: center;
+    font-family: "Galada", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    transform: scale(2.5);
+    margin-top: 20px;
+}
+
+
+.register-icon {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.register-icon:hover {
+    color: #007bff;
+}
+
+nav {
+    margin: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    margin: 0;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#principal-link {
+    color: #927726;
+    background-color: #F2E4BB;
+}
+
+#tienda-link {
+    color: #A3616B;
+    background-color: #FFD8DE;
+}
+
+#noticias-link {
+    color: #6B6BA3;
+    background-color: #B4CED7;
+}
+
+#albumes-link {
+    color: #927726;
+    background-color: #F2E4BB;
+}
+
+#carrito-link {
+    color: #A3616B;
+    background-color: #FFD8DE;
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+nav input[type="search"] {
+    padding: 5px;
+    margin-left: 15px;
+    border: 2px solid #FCDCDF;
+    background-color: #FCDCDF;
+    border-radius: 5px;
+}
+
+.cart-title {
+    text-align: center;
+    font-size: 2em;
+    margin: 40px 0;
+    color: #ffffff;
+}
+
+.cart-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFD8DE;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item-content {
+    flex: 1;
+    display: flex;
+    align-items: center; 
+}
+
+.remove-button {
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 20px;
+}
+
+.remove-button:hover {
+    background-color: #c0392b;
+}
+
+.footer {
+    background-color: #8B3B48;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: white;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+.no-items {
+    text-align: center;
+    font-size: 1.5em;
+    color: #666;
+    margin-top: 20px;
+}
+
+
+/* Formulario*/
+.contact-form-container {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0); 
+    padding: 0px; 
+    border-radius: 0px; 
+    text-align: center;
+}
+
+.contact-form-container h2 {
+    font-size: 1.5rem;
+    color: #E1B5B6;
+    margin-bottom: 0px;
+    margin-top: -8px;
+}
+
+.contact-form-container label {
+    font-size: 0.9rem;
+    color: #ffffff; 
+    margin-bottom: 0px;
+}
+
+.contact-form-container input[type="text"],
+.contact-form-container input[type="email"] {
+    width: 140px;
+    padding: 4px; 
+    margin: 2px;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    border: 1px solid #E1B5B6;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #ffffff;
+}
+
+.contact-form-container input[type="submit"] {
+    display: center;
+    width: 30%;
+    padding: 4px;
+    font-size: 0.9rem;
+    border-radius: 5px; 
+    background-color: #A3616B; 
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    margin-top: 5px;
+}
+
+.contact-form-container input[type="submit"]:hover {
+    background-color: #E1B5B6; 
+}
+
+@media (max-width: 480px) {
+    body {
+        background-image: linear-gradient(#2B281F, #8B3B48); 
+        font-size: 14px;
+    }
+
+    .title-container h1 {
+        font-size: 1.2rem;
+        transform: scale(1.8);
+        margin-top: 10px;
+        margin-bottom: 5%;
+    }
+    .cart-container{
+        max-width: 60%;
+
+    }
+        
+    .footer {
+        position: relative; 
+        height: auto; 
+        flex-direction: column; 
+        text-align: center;
+        padding: 20px;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+        margin: 20 auto;
+    }
+    .cart-container{
+        max-width: 90%;
+    }
+    
+    .footer {
+        position: relative;
+        height: auto; 
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+
+    }
+}
+
+@media (max-width: 1024px) {
+    .header {
+        flex-direction: column;
+        padding: 15px;
+        align-items: center;
+    }
+    .cart-item {
+        flex-direction: column; 
+        align-items: flex-start; 
+        gap: 10px;
+    }
+    .footer {
+        position: relative;
+        height: auto;
+        flex-direction: column; 
+        text-align: center;
+        padding: 20px;
+        gap: 10px;
+    }
+    
+}
